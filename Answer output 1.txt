@@ -1,0 +1,8 @@
+Cost of book 6: 22
+Enter the total amount of money you have: 
+100
+Maximum number of books you can buy: 2
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
