@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int findMaxBooks(int cost[], int n, int money) {
+    int totalBooks = 0;
+    int remainingMoney = money;
+
+    // Sort the cost array (optional step)
+    // You can use any sorting algorithm to sort the array if it's not already sorted.
+
+    // Loop through the cost array to buy books until running out of money
+    for (int i = 0; i < n; ++i) {
+        if (cost[i] <= remainingMoney) {
+            totalBooks++;
+            remainingMoney -= cost[i];
+        } else {
+            break; // Stop buying books if you run out of money
+        }
+    }
+
+    return totalBooks;
+}
+
+int main() {
+    int n; // Number of books
+    printf("Enter the number of books: ");
+    scanf("%d", &n);
+
+    int cost[n]; // Array to store the cost of each book
+
+    printf("Enter the cost of each book:\n");
+    for (int i = 0; i < n; ++i) {
+        printf("Cost of book %d: ", i + 1);
+        scanf("%d", &cost[i]);
+    }
+
+    int money;
+    printf("Enter the total amount of money you have: ");
+    scanf("%d", &money);
+
+    int maxBooks = findMaxBooks(cost, n, money);
+    printf("Maximum number of books you can buy: %d\n", maxBooks);
+
+    return 0;
+}
