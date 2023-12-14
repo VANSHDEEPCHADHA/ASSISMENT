@@ -1,5 +1,9 @@
-Largest three-digit Adam numbers:311
+Largest three-digit Adam number: 311
 
 
 ...Program finished with exit code 0
 Press ENTER to exit console.
+
+
+
+
