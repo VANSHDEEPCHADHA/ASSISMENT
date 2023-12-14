@@ -1,4 +1,4 @@
-Largest three-digit Adam numbers:
+Largest three-digit Adam numbers:311
 
 
 ...Program finished with exit code 0
